@@ -39,178 +39,40 @@ class _HistoryState extends State<History> {
                 child: Text("History",style: TextStyle(fontFamily: "Arial",fontWeight: FontWeight.bold),),
               ),
               SizedBox(height: 0),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/iphone12.jpg"),
-                  radius: 40),
-                  title: Text("Iphone 12",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/note.jpg"),
-                  radius: 40,),
-                  title: Text("Note 20 Ultra",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/mcair.jpg"),
-                  radius: 40,),
-                  title: Text("Macbook Air",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/mcpro.jpg"),
-                  radius: 40,),
-                  title: Text("Macbook Pro",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/gaming.jpg"),
-                  radius: 40,),
-                  title: Text("Gaming PC",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/keyboard.jpg"),
-                  radius: 40,),
-                  title: Text("Backlit Keyboard",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/mercedes.jpg"),
-                  radius: 40,),
-                  title: Text("Mercedes",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/audi.jpg"),
-                  radius: 40,),
-                  title: Text("Audi",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/roadster.jpg"),
-                  radius: 40,),
-                  title: Text("Roadster",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/royal.jpg"),
-                  radius: 40,),
-                  title: Text("Royal Field",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/iphonex.jpg"),
-                  radius: 40,),
-                  title: Text("Iphone X",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/porsche.jpg"),
-                  radius: 40,),
-                  title: Text("Porsche",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
-                  subtitle: Row(
-                              children: [
-                                Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
-                                Text("5.0 (23 Review)"),
-                              ],
-                            ),
-                  trailing: Text("\$10"),
-              ),
+              listdown("assets/iphone12.jpg", "Iphone 12"),
+              listdown("assets/note.jpg","Note 20 Ultra"),
+              listdown("assets/mcair.jpg","Macbook Air"),
+              listdown("assets/mcpro.jpg","Macbook Pro"),
+              listdown("assets/gaming.jpg","Gaming PC"),
+              listdown("assets/keyboard.jpg","Backlit Keyboard"),
+              listdown("assets/mercedes.jpg","Mercedes"),
+              listdown("assets/audi.jpg","Audi"),
+              listdown("assets/roadster.jpg","Roadster"),
+              listdown("assets/royal.jpg","Royal Field"),
+              listdown("assets/iphonex.jpg","Iphone X"),
+              listdown("assets/porsche.jpg","Porsche")
             ],
           ),
         ),
       )
     );
   }
+}
+
+Widget listdown(var imagesrc, var name)
+{
+  return ListTile(
+    leading: CircleAvatar(
+    backgroundImage: AssetImage(imagesrc),
+    radius: 40),
+    title: Text(name,
+    style: TextStyle(fontWeight: FontWeight.bold,fontFamily: "Arial")),
+    subtitle: Row(
+                children: [
+                  Icon(Icons.star, size: 15,color: Colors.yellowAccent,),
+                  Text("5.0 (23 Review)"),
+                ],
+              ),
+    trailing: Text("\$10"),
+  );
 }
